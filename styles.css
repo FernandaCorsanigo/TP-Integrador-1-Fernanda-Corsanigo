@@ -169,13 +169,13 @@ h3{
     line-height: 32px;
 }
 
-.services-section{
+.services{
     background-color: #1f1346;
     color: white;
     padding: 80px 0px 80px;
 }
 
-.services-section__header{
+.services__header{
     max-width: 1208px;
     margin: 0 auto;
     padding: 0 40px;
@@ -197,7 +197,7 @@ h3{
     line-height: 24px;
 }
 
-.services-section__container{
+.services__container{
     max-width: 1208px;
     margin: 0 auto;
     padding: 0 40px;
@@ -205,7 +205,7 @@ h3{
     align-items: stretch;
 }
 
-.services-section__card{
+.services__card{
     background-color: #2f1c6a;
     border-radius: 16px;
     text-align: left;
@@ -227,27 +227,27 @@ h3{
 }
 
 @media screen and (max-width:1207px){
-    .services-section__container{
+    .services__container{
         box-sizing: 0 auto;
     }
 
-    .services-section__header{
+    .services__header{
         box-sizing: 0 auto;
     }
 }
 
 @media screen and (max-width:1024px){
-    .services-section{
+    .services{
         padding: 64px 0 64px;
     }
 
-    .services-section__header{
+    .services__header{
         max-width: 768px;
         gap: 24px;
         margin-bottom: 40px;
     }
 
-    .services-section__container{
+    .services__container{
         flex-direction: column;
         max-width: 768px;
         gap: 24px;
@@ -262,18 +262,18 @@ h3{
 }
 
 @media screen and (max-width:767px){
-    .services-section{
+    .services{
         padding: 56px 0 56px;
     }
 
-    .services-section__header{
+    .services__header{
         max-width: 540px;
         padding: 0px 16px;
         gap: 16px;
         margin-bottom: 32px;
     }
 
-    .services-section__container{
+    .services__container{
         max-width: 540px;
         padding: 0px 16px;
         gap: 16px;
@@ -290,24 +290,24 @@ h3{
 
 /*REVIEWS SECTION*/
 
-.reviews-section{
+.reviews{
     padding: 80px 0px 80px;
 }
 
-.reviews-section__container{
+.reviews__container{
     max-width: 1208px;
     margin: 0 auto;
     padding: 0 40px;
     gap: 50px;
 }
 
-.reviews-h2{
+.h2-style-2{
     letter-spacing: 1px;
     text-align: justify;
     text-align-last: center;
 }
 
-.circle-indicator{
+.reviews__dots-indicators{
     justify-content: center;
     gap: 16px;
     color: #8c85ff;
@@ -330,7 +330,7 @@ h3{
     align-items: stretch;
 }
 
-.reviews-body__card{
+.reviews__card{
     flex: 1;
     padding: 32px;
     background-color: #f4f5ff;
@@ -340,16 +340,16 @@ h3{
     justify-content: flex-start;
 }
 
-.reviews-card__person{
+.reviews__card-person{
     justify-content: flex-start;
     gap: 11px;
 }
 
-.reviews-card__person-left{
+.reviews__card-person__left{
     height: 48px;
 }
 
-.reviews-card__icon{
+.reviews__card-icon{
     justify-content: flex-start;
     gap: 7px;
     color: #00b090;
@@ -363,7 +363,7 @@ h3{
     font-weight: 700;
 }
 
-.reviews-card__body{
+.reviews__card-body{
     justify-content: space-between;
     height: 100%;
 }
@@ -373,7 +373,7 @@ h3{
     font-size: 14px;
 }
 
-.reviews-card__link{
+.reviews__card-body__link{
     justify-content: flex-start;
     gap: 6px;
     padding-top: 16px;
@@ -393,14 +393,14 @@ h3{
     font-size: 10px;
 }
 
-.reviews-section__footer{
+.reviews__footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 32px 40px 0 40px;
 }
 
-.reviews-section__footer-button{
+.reviews__footer-button{
     font-weight: 700;
     color: #673de6;
     padding: 11px 47px;
@@ -409,39 +409,41 @@ h3{
     transition: background-color 0.1s ease-in-out;
 }
 
-.reviews-section__footer-button:hover{
+.reviews__footer-button:hover{
     background-color: #e2dbfc;
 }
 
 @media screen and (max-width:1207px){
-    .reviews-section__container{
+    .reviews__container{
         box-sizing: 0 auto;
     }
 }
 
 @media screen and (max-width:1024px){
-    .reviews-section{
+    .reviews{
         padding: 64px 0 64px;
     }
-    .reviews-section__container{
+    .reviews__container{
         max-width: 768px;
         gap: 24px;
     }
     .reviews__body{
         flex-direction: column;
     }
-    .reviews-body__card{
+    .reviews__card{
         display: none;
     }
 
-    .reviews-body__card:first-child {
+    .reviews__card:first-child {
         display: flex;
     }
-    .circle-indicator{
+
+    .reviews__dots-indicators{
         display: flex;
         padding-top: 40px;
     }
-    .reviews-h2{
+
+    .h2-style-2{
         font-size: 28px;
         text-align: center;
         letter-spacing: 0.5px;
@@ -449,17 +451,17 @@ h3{
 }
 
 @media screen and (max-width:767px){
-    .reviews-section{
+    .reviews{
         padding: 56px 0 56px;
     }
 
-    .reviews-section__container{
+    .reviews__container{
         max-width: 540px;
         padding: 0px 16px;
         gap: 16px;
     }
 
-    .reviews-h2{
+    .h2-style-2{
         font-size: 24px;
         line-height: 32px;
     }
@@ -491,11 +493,11 @@ footer{
     gap: 8px;
 }
 
-.footer-title{
+.footer-section__title{
     line-height: 24px;
 }
 
-.footer-title__font{
+.h3-style-3{
     font-size: 16px;
 }
 
@@ -503,17 +505,17 @@ footer{
     gap:16px;
 }
 
-.nav__item-footer{
+.footer-section__link{
     color:#1d1e20;
     font-size: 14px;
     transition: all .3s ease-in-out;
 }
 
-.nav__item-footer:hover{
+.footer-section__link:hover{
     color: #5025d1;
 }
 
-.bi-chevron-down{
+.bi-chevron-down-footer{
     display: none;
 }
 
@@ -532,12 +534,12 @@ footer{
     width: 100%;
 }
 
-.footer-section-logo__upper-section{
+.footer-section__logo-upper-section{
     justify-content: space-between;
     width: 100%;
 }
 
-.footer-section-logo__lower-section{
+.footer-section__logo-lower-section{
     justify-content: space-between;
     width: 100%;
     gap: 16px;
@@ -597,6 +599,10 @@ footer{
         max-width: 768px;
     }
 
+    .footer-section__column{
+        margin-bottom: 24px;
+    }
+
     .footer-section{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -609,11 +615,11 @@ footer{
         margin-top: 24px;
     }
 
-    .footer-section-logo__upper-section{
+    .footer-section__logo-upper-section{
         margin-top: 8px;
         gap: 16px;
     }
-    .footer-section-logo__lower-section{
+    .footer-section__logo-lower-section{
         flex-direction: column;
         align-items: flex-start;
         margin-bottom: 0;
@@ -646,7 +652,7 @@ footer{
         width: 100%;
     }
 
-    .footer-title{
+    .footer-section__title{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -658,7 +664,7 @@ footer{
     display: flex;
     }
 
-    .nav__item-footer{
+    .footer-section__link{
         display: none;
     }
 
@@ -669,7 +675,7 @@ footer{
         margin-bottom: 8px;
     }
 
-    .footer-section-logo__upper-section{
+    .footer-section__logo-upper-section{
         flex-direction: column-reverse;
         align-items: flex-start; 
     }
